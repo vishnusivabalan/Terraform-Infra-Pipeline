@@ -2,8 +2,8 @@ module "vpc" {
   source           = "../../modules/vpc"
   Env              = "dev"
   vpc_cidr         = "10.0.0.0/16"
-  pubSubnet_cidr   = "10.0.0.1/24"
-  pvtSubnet_cidr   = "10.0.0.2/24"
+  pubSubnet_cidr   = "10.0.1.0/24"
+  pvtSubnet_cidr   = "10.0.2.0/24"
   subnet_aval_Zone = "${var.aws_region_name}a"
 }
 
